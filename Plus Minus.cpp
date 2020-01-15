@@ -46,3 +46,40 @@ There are  positive numbers,  negative numbers, and  zero in the array.
 The proportions of occurrence are positive: , negative:  and zeros: .
 */
 
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,i;
+    cin>>n;
+    float count=0,count1=0,count2=0;
+    int a[n];
+    for (i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    
+    for (i=0;i<n;i++)
+    {
+        if(a[i]>0)
+        {
+            count++;
+        }
+        else if(a[i]<0)
+        {
+            count1++;
+        }
+        else if(a[i]==0)
+        {
+            count2++;
+        }
+    }
+    
+    cout<<count/n<<endl;
+    cout<<count1/n<<endl;
+    cout<<count2/n<<endl;
+    
+    
+}
